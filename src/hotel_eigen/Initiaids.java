@@ -8,6 +8,12 @@ package hotel_eigen;
  *
  * @author johan
  */
-public class Rechne_kosten {
+public class Initiaids {
     
+    public static void main(String[] args){
+        zimmer_auswahl refGUI = new zimmer_auswahl ();
+        refGUI.setVisible(true);
+        
+    
+}
 }

@@ -4,12 +4,13 @@
  */
 package hotel_eigen;
 import java.util.Date;
+import java.io.Serializable;
 
 /**
  *
  * @author johan
  */
-public class Buchung {
+public class Buchung implements Serializable{
     
     private Kunde gast;
     private Zimmer raum;

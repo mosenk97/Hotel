@@ -4,26 +4,32 @@
  */
 package hotel_eigen;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
  * @author johan
  */
-public class Kunde {
+public class Kunde implements Serializable {
     
     private String vorname;
     private String name;
-    private date geburtstag;
+    private Date geburtstag;
     private String wohnort;
     private int plz;
     private boolean registriert;
     private int kunden_id;
     
-        private static class date {
-
-        public date() {
+        
+        public Kunde (String vorname, String name, String wohnort, int plz){
+            this.vorname = vorname;
+            this.name = name;
+            this.geburtstag = geburtstag;
+            this.wohnort = wohnort;
+            this.plz = plz;
+            this.registriert = registriert;
+            this.kunden_id = kunden_id;
         }
-    }
     
      public String getvorname (){
         return vorname;
@@ -31,8 +37,47 @@ public class Kunde {
     
     public void setvorname (String vorname){
         this.vorname = vorname;
-}
-
+}   
+    public void setname (String name){
+        this.name = name;
+    }
+    
+    public String getname (){
+        return name;
+    }
+    
+    public Date getgeburtstag(){
+        return geburtstag;
+    }
+    
+    public void setgeburtstag(Date geburtstag){
+        this.geburtstag = geburtstag;
+    }
+    
+    public void setwohnort(){
+       this.wohnort = wohnort;
+    }
+    
+    public String getwohnort(String wohnort){
+        return wohnort;
+    }
+    
+    public void setregistriert (){
+        this.registriert = registriert;
+    }
+    
+    public boolean getregistriert(boolean registriert){
+        return registriert;
+    }  
+    
+    public void setkunden_id(){
+        this.kunden_id = kunden_id;
+    }
+    
+    public int getkunden_id(int kunden_id){
+        return kunden_id;
+    }
+    
     public int getplz (){
         return plz;
     }
@@ -40,45 +85,4 @@ public class Kunde {
     public void setplz (int plz){
         this.plz = plz;
 }
-
-    public int getkunden_id (){
-        return kunden_id;
-    }
-    
-    public void setzimmer_preis (int zimmer_preis){
-        this.zimmer_preis = zimmer_preis;
-}
-
-    public int getzimmer_id (){
-        return zimmer_id;
-    }
-    
-    public void setzimmer_id (int zimmer_id){
-        this.zimmer_id = zimmer_id;
-}
-
-    public float getzimmer_groesse (){
-        return zimmer_groesse;
-    }
-    
-    public void setzimmer_groesse (float zimmer_groesse){
-        this.zimmer_groesse = zimmer_groesse;
-}
-
-    public boolean getsuit (){
-        return suit;
-    }
-    
-    public void setsuit (boolean suit){
-        this.suit = suit;
-}
-    public boolean getgesperrt (){
-        return gesperrt;
-    }
-    
-    public void setgesperrt (boolean gesperrt){
-        this.gesperrt = gesperrt;
-}
-        
-        
 }
