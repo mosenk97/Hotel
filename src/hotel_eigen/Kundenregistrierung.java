@@ -52,6 +52,8 @@ public class Kundenregistrierung extends javax.swing.JFrame {
         jCheckBoxumfrage = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 600));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(222, 238, 248));
         jPanel1.setEnabled(false);

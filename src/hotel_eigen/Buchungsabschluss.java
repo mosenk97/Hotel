@@ -52,6 +52,8 @@ public class Buchungsabschluss extends javax.swing.JFrame {
         jkundennachname3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 600));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(222, 238, 248));
         jPanel1.setEnabled(false);

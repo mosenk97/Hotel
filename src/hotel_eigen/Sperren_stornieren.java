@@ -43,6 +43,8 @@ public class Sperren_stornieren extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(900, 500));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(222, 238, 248));
         jPanel1.setEnabled(false);

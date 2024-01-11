@@ -4,6 +4,7 @@
  */
 package hotel_eigen;
 
+
 /**
  *
  * @author johan
@@ -47,14 +48,16 @@ public class kunden_daten extends javax.swing.JFrame {
         jkundenvorname = new javax.swing.JTextField();
         jkundenwohnort = new javax.swing.JTextField();
         jkundenpostleitzahl = new javax.swing.JTextField();
-        jspinnergeburtstag = new javax.swing.JSpinner();
         jRadioButton3 = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
         jkundenvornam1 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
         jButtonloeschen = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 600));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(222, 238, 248));
         jPanel1.setEnabled(false);
@@ -75,7 +78,7 @@ public class kunden_daten extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -167,7 +170,7 @@ public class kunden_daten extends javax.swing.JFrame {
                 .addComponent(jButtonregistrierung)
                 .addGap(51, 51, 51)
                 .addComponent(jButtonbuchung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,9 +250,6 @@ public class kunden_daten extends javax.swing.JFrame {
             }
         });
 
-        jspinnergeburtstag.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        jspinnergeburtstag.setModel(new javax.swing.SpinnerDateModel(new java.util.Date(), new java.util.Date(1703788234644L), new java.util.Date(), java.util.Calendar.MONTH));
-
         jRadioButton3.setBackground(new java.awt.Color(222, 238, 248));
         jRadioButton3.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jRadioButton3.setForeground(new java.awt.Color(91, 142, 206));
@@ -291,12 +291,15 @@ public class kunden_daten extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setText("jTextField1");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -311,18 +314,19 @@ public class kunden_daten extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(16, 16, 16)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jkundenvorname, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jkundenwohnort, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                        .addComponent(jkundenpostleitzahl, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                        .addComponent(jkundennachname)
-                                        .addComponent(jspinnergeburtstag)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jkundenvorname, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jkundenwohnort, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                                            .addComponent(jkundenpostleitzahl, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                                            .addComponent(jkundennachname)))
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(86, 86, 86)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel9)
                                     .addComponent(jkundenvornam1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(71, Short.MAX_VALUE))
+                                .addContainerGap(58, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(jRadioButton3)
@@ -332,7 +336,6 @@ public class kunden_daten extends javax.swing.JFrame {
                                 .addComponent(jButton5)
                                 .addGap(37, 37, 37))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
@@ -350,16 +353,16 @@ public class kunden_daten extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
                             .addComponent(jkundennachname, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(35, 35, 35)
+                        .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
-                            .addComponent(jspinnergeburtstag, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addComponent(jLabel9)
                         .addGap(18, 18, 18)
                         .addComponent(jkundenvornam1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25)
+                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jkundenwohnort, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -437,12 +440,20 @@ public class kunden_daten extends javax.swing.JFrame {
      String name = jkundennachname.getText();
      int plz = Integer.parseInt(jkundenpostleitzahl.getText());
      String wohnort = jkundenwohnort.getText();   
-        
-     Kunde refkunde = new Kunde(vorname, name, wohnort, plz);
      
-     Steuerung refSteuerung = Steuerung.getSteuerung();
-     refSteuerung.addKunde(refkunde);
-     
+     int k = checkupDaten();
+     if (k > 0){
+         try{
+            Kunde refKunde = new Kunde(vorname, name, wohnort, plz);
+            Steuerung refSteuerung = Steuerung.getSteuerung();
+            refSteuerung.addKunde(refKunde);
+         }catch(Exception e){
+         jkundenvorname.setText("");
+        jkundennachname.setText("");
+        jkundenwohnort.setText("");
+        jkundenpostleitzahl.setText("");
+         }
+     }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButtonloeschenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonloeschenActionPerformed
@@ -492,7 +503,26 @@ public class kunden_daten extends javax.swing.JFrame {
             }
         });
     }
+        public int checkupDaten() {
+        String vn = jkundenvorname.getText();
+        String nn = jkundennachname.getText();
+        String ort = jkundenwohnort.getText();
+        //int plz = Integer.parseInt(jkundenpostleitzahl.getText());
+        if (vn.length() < 2 || nn.length() < 2 || ort.length() < 2) {
+            new javax.swing.JOptionPane().showMessageDialog(this,
+                    "Vor- bzw. Nachname oder Ort fehlerhaft",
+                    "Bitte korrigieren",
+                    javax.swing.JOptionPane.ERROR_MESSAGE);
+            return 0;
+        }else; 
+            return 1;
+        }
+                
+        
 
+    
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButtonbuchung;
@@ -515,11 +545,11 @@ public class kunden_daten extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jkundennachname;
     private javax.swing.JTextField jkundenpostleitzahl;
     private javax.swing.JTextField jkundenvornam1;
     private javax.swing.JTextField jkundenvorname;
     private javax.swing.JTextField jkundenwohnort;
-    private javax.swing.JSpinner jspinnergeburtstag;
     // End of variables declaration//GEN-END:variables
 }

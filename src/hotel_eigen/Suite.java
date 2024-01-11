@@ -8,14 +8,12 @@ package hotel_eigen;
  *
  * @author johan
  */
-public class Initiaids {
+public class Suite extends Zimmer{
     
-    public static void main(String[] args){
-        zimmer_auswahl refGUI = new zimmer_auswahl ();
-        refGUI.setVisible(true);
-        
-        //refGUI.errechneKosten(buchung);
-        
+    public Suite(int zimmerID) {
+        super(55, zimmerID);
+    }
     
-}
+    
+    
 }

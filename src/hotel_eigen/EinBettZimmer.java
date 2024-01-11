@@ -8,13 +8,10 @@ package hotel_eigen;
  *
  * @author johan
  */
-public class Zimmerverwaltung {
-    private static final int Max_einzelzimmer = 4;
-    private static final int Max_doppelzimmer = 4;
-    private static final int Max_suiten = 4;
+  public class EinBettZimmer extends Zimmer{
     
-    
-    
-    
+    public EinBettZimmer(int zimmerID) {
+        super(230, zimmerID);
+    }
     
 }

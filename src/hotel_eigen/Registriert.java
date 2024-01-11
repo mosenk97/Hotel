@@ -67,5 +67,6 @@ public void setumfrage(boolean umfrage){
 public boolean getumfrage(){
     return umfrage;
 }
+}
 
 
