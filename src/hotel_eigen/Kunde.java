@@ -5,12 +5,18 @@
 package hotel_eigen;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Iterator;
 
 /**
  *
  * @author johan
  */
 public class Kunde implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    static Iterator<Kunde> iterator() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     private String vorname;
     private String name;
@@ -30,6 +36,12 @@ public class Kunde implements Serializable {
             this.registriert = registriert;
             this.kunden_id = kunden_id;
         }
+    public void datenAktualisieren(String vorname, String name, String wohnort, int plz) {
+        this.vorname = vorname;
+        this.name = name;
+        this.wohnort = wohnort;
+        this.plz = plz;
+    }
     
      public String getvorname (){
         return vorname;
@@ -85,4 +97,39 @@ public class Kunde implements Serializable {
     public void setplz (int plz){
         this.plz = plz;
 }
+    public int checkePLZ(String text) {
+        int plz;
+        try {
+            plz = Integer.parseInt(text);
+        } catch (NumberFormatException e) {
+            return -1;
+        }
+        if (plz < 1000 || plz > 99999) {
+            return -1;
+        }
+        return plz;
+    }
+    
+    
+        
+    
+    
+    //public String toString() {
+       // String s = "Gast " + getkunden_id()+": "+getvorname()+" "+getname()+" aus "+getplz()+" ";
+        // s += getwohnort()+" (Umsatz "+getUmsatz()+" �)";
+        //return s;
+    
+    //}
+@Override
+    public String toString() {
+        return "Kunde: " +
+                "Kunden-Id" + kunden_id + 
+                "vorname='" + vorname + '\'' +
+                ", nachname='" + name + '\'' +
+                ", geburtstag=" + geburtstag +
+                ", wohnort='" + wohnort + '\'' +
+                ", postleitzahl" + plz + 
+                ", registriert=" + registriert + "\n";
+    }
+
 }
